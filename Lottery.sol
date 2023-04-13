@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
 
-contract Lottery4 is VRFConsumerBaseV2 {
+contract Lottery is VRFConsumerBaseV2 {
   VRFCoordinatorV2Interface COORDINATOR;
 
   uint64 s_subscriptionId; //hold the subscription ID
