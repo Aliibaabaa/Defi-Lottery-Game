@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <title>Lottery DApp</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+    <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript">
+    </script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="card">
+        <h1>DEFI LOTTERY GAME</h1>
+        <p>Get those 6 lucky numbers ready, and let's see if you can get it right! </p>
+        <div class="nums">
+            <label for="number1"> </label>
+            <input type="number" id="number1" name="number1" placeholder="Num1" min="1" max="50">
+        </div>
+        <div class="nums">
+            <label for="number2"> </label>
+            <input type="number" id="number2" name="number2" placeholder="Num2" min="1" max="50">
+        </div>
+        <div class="nums">
+            <label for="number3"> </label>
+            <input type="number" id="number3" name="number3" placeholder="Num3" min="1" max="50">
+        </div>
+        <div class="nums">
+            <label for="number4"> </label>
+            <input type="number" id="number4" name="number4" placeholder="Num4" min="1" max="50">
+        </div>
+        <div class="nums">
+            <label for="number5"> </label>
+            <input type="number" id="number5" name="number5" placeholder="Num5" min="1" max="50">
+        </div>
+        <div class="nums">
+            <label for="number6"> </label>
+            <input type="number" id="number6" name="number6" placeholder="Num6" min="1" max="50">
+        </div>
+        <hr style="opacity: 0; margin: 0;">
+        <button id="submit" onclick="playNow()">PLAY</button>
+        <button id="submit" onclick="submitNumbers()">TICKET</button>
+        <hr style="opacity: 0.5;">
+        <br>
+
+        <!--         <h2>Winning Numbers:</h2>
+        <ul id="generatedNumbers"> </ul> -->
+        <button id="submit" onclick="seeNumbers()">See Winning Numbers</button>
+        <ul id="generatedNumbers"> </ul>
+
+        <br>
+        <!--         <h2>Result:</h2> 
+        <p id="result">  </p> -->
+
+    </div>
+</body>
+
+</html>
